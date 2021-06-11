@@ -32,10 +32,12 @@
 .titrereserv {
     text-align: center;
     padding: 30px 18px 18px 18px;
+    font-size: x-large;
 }
 .titredecou {
     text-align: center;
     padding: 0px 15px 18px 15px;
+    font-size: large;
 }
 .robotofin {
     font-family: robotofin;
@@ -85,6 +87,9 @@ header {
     border-radius: 50px;
     margin-bottom: 40px;
 }
+#boutonexplorer:hover {
+    box-shadow: 2px 4px 13px 5px #c9c9ca;;
+}
 .explorer {
     color: white;
 }
@@ -112,8 +117,9 @@ header {
 .icoetape {
     padding-left: 10px;
 }
-.active {
+.etape:hover {
     background-color: #f5edff;
+    box-shadow: -4px 4px 14px 0px #d1cece;
 }
 .icoactive {
     color: #9356DC;
@@ -189,7 +195,7 @@ i.fas.fa-mobile-alt.icoetape {
 }
 .divimgresto {
     display: flex;
-    height: 210px;
+    max-height: 210px;
     overflow: hidden;
 }
 .nomresto {
@@ -244,3 +250,46 @@ i.far.fa-heart:hover {
 i.fas.fa-hands-helping {
     color: white;
 }
+@media screen and (min-width: 500px) {
+    .logo {
+        width: 200px;
+    }
+    .etape {
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 604px) {
+    .etape {
+        justify-content: flex-start;
+    }
+    #etapes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .restaurant {
+        width: calc(50% - 24px);
+        margin: 12px;
+    }
+    #lieux {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .restobas {
+        height: 23%;
+    }
+    .divimgresto {
+        max-height: none;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .restaurant {
+        width: calc(33% - 30px);
+        margin: 15px;
+    }
+} 
+@media screen and (min-width: 1300px) {
+    .restaurant {
+        width: calc(25% - 30px);
+    }
+}
+

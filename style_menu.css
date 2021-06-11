@@ -41,6 +41,7 @@
 .baspage {
     background-color: #353535;
     padding: 20px;
+    width: 100%;
 }
 .logo2 {
     color: white;
@@ -186,10 +187,31 @@ i.far.fa-heart {
     width: 160px;
     text-align: center;
 }
+.commander:hover {
+    box-shadow: 2px 4px 13px 5px #c9c9ca;;  
+}
 .liencom {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-bottom: 60px;
     margin-top: 10px;
+}
+@media screen and (min-width: 700px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .titre {
+        width: 100%;
+    }
+    .plats {
+        width: calc(33% - 30px);
+    }
+    .entrees {
+        width: calc(33% - 30px);
+    }
+    .desserts {
+        width: calc(33% - 30px);
+    }
 }
