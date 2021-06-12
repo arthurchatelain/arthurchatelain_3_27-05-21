@@ -1,0 +1,350 @@
+@font-face {
+  font-family: "robotogras";
+  src: url(polices/robotogras.ttf);
+}
+@font-face {
+  font-family: "robotomed";
+  src: url(polices/robotomed.ttf);
+}
+@font-face {
+  font-family: "robotofin";
+  src: url(polices/robotofin.ttf);
+}
+@font-face {
+  font-family: "robotolight";
+  src: url(polices/robotolight.ttf);
+}
+@font-face {
+  font-family: "shrikhand";
+  src: url(polices/shrikhand.ttf);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.shrikhand {
+  font-family: shrikhand;
+}
+
+.robotolight {
+  font-family: robotolight;
+}
+
+.titrereserv {
+  text-align: center;
+  padding: 30px 18px 18px 18px;
+  font-size: x-large;
+}
+
+.titredecou {
+  text-align: center;
+  padding: 0px 15px 18px 15px;
+  font-size: large;
+}
+
+.robotofin {
+  font-family: robotofin;
+}
+
+.robotogras {
+  font-family: robotogras;
+}
+
+.robotomed {
+  font-family: robotomed;
+}
+
+.logo {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#lieuparis {
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 10px 0px 10px 0px;
+  align-items: center;
+  box-shadow: 0px 13px 7px -12px rgba(0, 0, 0, 0.3) inset;
+}
+
+.textlieu {
+  padding-left: 10px;
+  color: #353535;
+  font-family: robotomed;
+}
+
+.icoloc {
+  color: #353535;
+}
+
+#menuhaut {
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#boutonexplorer {
+  background: linear-gradient(to bottom right, #f075da, #a45cdc);
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 50px;
+  margin-bottom: 40px;
+}
+
+#boutonexplorer:hover {
+  box-shadow: 2px 4px 13px 5px #c9c9ca;
+}
+
+.explorer {
+  color: white;
+}
+
+#Fonctionnement {
+  padding: 35px 20px 40px 20px;
+}
+
+.etape {
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  background-color: #fafafa;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+  box-shadow: -4px 4px 14px 0px #e6e4e4;
+  position: relative;
+}
+
+#etapes {
+  padding: 25px 0px;
+}
+
+.nometape {
+  padding-left: 20px;
+}
+
+.icoetape {
+  padding-left: 10px;
+}
+
+.etape:hover {
+  background-color: #f5edff;
+  box-shadow: -4px 4px 14px 0px #d1cece;
+}
+
+.icoactive {
+  color: #9356DC;
+}
+
+.etape1::before {
+  position: absolute;
+  content: "1";
+  background-color: #9356DC;
+  border-radius: 20px;
+  width: 19px;
+  text-align: center;
+  left: -11px;
+  color: white;
+  padding: 2px;
+  font-family: "robotomed";
+}
+
+.etape2::before {
+  position: absolute;
+  content: "2";
+  background-color: #9356DC;
+  border-radius: 20px;
+  width: 19px;
+  text-align: center;
+  left: -11px;
+  color: white;
+  padding: 2px;
+  font-family: "robotomed";
+}
+
+.etape3::before {
+  position: absolute;
+  content: "3";
+  background-color: #9356DC;
+  border-radius: 20px;
+  width: 19px;
+  text-align: center;
+  left: -11px;
+  color: white;
+  padding: 2px;
+  font-family: "robotomed";
+}
+
+i.fas.fa-bars.icoetape {
+  color: grey;
+}
+
+i.fas.fa-mobile-alt.icoetape {
+  color: grey;
+}
+
+#restaurants {
+  padding: 45px 20px 30px 20px;
+  background-color: #f6f6f6;
+}
+
+.restaurant {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  box-shadow: 7px 8px 20px 2px #e1e1e1;
+}
+
+.imgresto {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  height: max-content;
+}
+
+.restobas {
+  background-color: white;
+  border-radius: 0px 0px 20px 20px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#lieux {
+  padding: 30px 0px 30px 0px;
+}
+
+.divimgresto {
+  display: flex;
+  max-height: 210px;
+  overflow: hidden;
+}
+
+.nomresto {
+  color: black;
+  margin-bottom: 3px;
+}
+
+.lieuresto {
+  color: black;
+}
+
+i.far.fa-heart {
+  font-size: x-large;
+  color: black;
+}
+
+i.far.fa-heart:hover {
+  font-weight: 800;
+}
+
+#baspage {
+  background-color: #353535;
+  padding: 20px;
+}
+
+.logo2 {
+  color: white;
+  padding-bottom: 20px;
+  font-size: larger;
+}
+
+.lienico {
+  color: white;
+}
+
+.lienico1 {
+  color: white;
+  padding-left: 17px;
+}
+
+.lienico2 {
+  color: white;
+  padding-left: 10px;
+}
+
+.icobas {
+  color: white;
+}
+
+.liensico {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+i.far.fa-heart:hover {
+  font-weight: 800;
+  background: linear-gradient(to bottom right, #f075da, #a45cdc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+i.fas.fa-hands-helping {
+  color: white;
+}
+
+@media screen and (min-width: 500px) {
+  .logo {
+    width: 200px;
+  }
+
+  .etape {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 604px) {
+  .etape {
+    justify-content: flex-start;
+  }
+
+  #etapes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .restaurant {
+    width: calc(50% - 24px);
+    margin: 12px;
+  }
+
+  #lieux {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .restobas {
+    height: 23%;
+  }
+
+  .divimgresto {
+    max-height: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .restaurant {
+    width: calc(33% - 30px);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .restaurant {
+    width: calc(25% - 30px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
