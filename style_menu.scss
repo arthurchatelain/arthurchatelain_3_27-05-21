@@ -42,31 +42,31 @@
     background-color: #353535;
     padding: 20px;
     width: 100%;
-}
-.logo2 {
-    color: white;
-    padding-bottom: 20px;
-    font-size: larger;
-}
-.lienico {
-    color: white;
-}
-.lienico1 {
-    color: white;
-    padding-left: 17px;
-}
-.lienico2 {
-    color: white;
-    padding-left: 10px;
-}
-.icobas {
-    color: white;
+    .logo2 {
+        color: white;
+        padding-bottom: 20px;
+        font-size: larger;
+    }
 }
 .liensico {
     display: flex;
     flex-direction: row;
     padding-bottom: 10px;
     align-items: center;
+    .lienico {
+        color: white;
+    }
+    .lienico1 {
+        color: white;
+        padding-left: 17px;
+    }
+    .lienico2 {
+        color: white;
+        padding-left: 10px;
+    }
+    .icobas {
+        color: white;
+    }
 }
 i.fas.fa-hands-helping {
     color: white;
@@ -88,75 +88,83 @@ i.fas.fa-hands-helping {
 }
 .divmenu {
     position: relative;
-}
-.menu {
-    background-color: #f6f6f6;
-    position: absolute;
-    top: -35px;
-    width: 100%;
-    border-radius: 30px;
-}
-.titre {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    padding-right: 20px;
-    padding-left: 15px;
+    .menu {
+        background-color: #f6f6f6;
+        position: absolute;
+        top: -35px;
+        width: 100%;
+        border-radius: 30px;
+        .titre {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-bottom: 25px;
+            padding-right: 20px;
+            padding-left: 15px;
+            .titreresto {
+                font-size: x-large;
+            }
+        }
+    }
 }
 i.far.fa-heart:hover {
     font-weight: 800;
     background: linear-gradient(to bottom right, #f075da, #a45cdc);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 i.far.fa-heart {
     font-size: x-large;
-}
-.titreresto {
-    font-size: x-large;
+    &:hover {
+        font-weight: 800;
+        background: linear-gradient(to bottom right, #f075da, #a45cdc);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 .entrees {
     padding: 15px;
+    .titreentrees {
+        padding-bottom: 20px;
+        &::after {
+            width: 40px;
+            height: 3px;
+            background: #99e2d0;
+            content: " ";
+            display: block;
+            position: absolute;
+        }
+    }
 }
 .plats {
     padding: 15px;
+    .titreplats {
+        padding-bottom: 20px;
+        &::after {
+            width: 40px;
+            height: 3px;
+            background: #99e2d0;
+            content: " ";
+            display: block;
+            position: absolute;
+        }
+    }
 }
 .desserts {
     padding: 15px;
-}
-.titreentrees {
-    padding-bottom: 20px;
-}
-.titredesserts {
-    padding-bottom: 20px;
-}
-.titreplats {
-    padding-bottom: 20px;
-}
-.titreentrees::after {
-    width: 40px;
-    height: 3px;
-    background: #99e2d0;
-    content: " ";
-    display: block;
-    position: absolute;
-}
-.titreplats::after {
-    width: 40px;
-    height: 3px;
-    background: #99e2d0;
-    content: " ";
-    display: block;
-    position: absolute;
-}
-.titredesserts::after {
-    width: 40px;
-    height: 3px;
-    background: #99e2d0;
-    content: " ";
-    display: block;
-    position: absolute;
+    .titredesserts {
+        padding-bottom: 20px;
+        &::after {
+            width: 40px;
+            height: 3px;
+            background: #99e2d0;
+            content: " ";
+            display: block;
+            position: absolute;
+        }
+    }
 }
 .plat {
     background-color: white;
@@ -167,10 +175,10 @@ i.far.fa-heart {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
-}
-.prix {
-    align-self: flex-end;
-    font-family: robotomed;
+    .prix {
+        align-self: flex-end;
+        font-family: robotomed;
+    }
 }
 .nomplat {
     font-family: robotomed;
@@ -186,9 +194,9 @@ i.far.fa-heart {
     color: white;
     width: 160px;
     text-align: center;
-}
-.commander:hover {
-    box-shadow: 2px 4px 13px 5px #c9c9ca;;  
+    &:hover {
+        box-shadow: 2px 4px 13px 5px #c9c9ca;;  
+    }
 }
 .liencom {
     display: flex;

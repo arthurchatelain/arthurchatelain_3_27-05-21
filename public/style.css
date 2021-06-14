@@ -32,18 +32,6 @@
   font-family: robotolight;
 }
 
-.titrereserv {
-  text-align: center;
-  padding: 30px 18px 18px 18px;
-  font-size: x-large;
-}
-
-.titredecou {
-  text-align: center;
-  padding: 0px 15px 18px 15px;
-  font-size: large;
-}
-
 .robotofin {
   font-family: robotofin;
 }
@@ -76,14 +64,12 @@ header {
   align-items: center;
   box-shadow: 0px 13px 7px -12px rgba(0, 0, 0, 0.3) inset;
 }
-
-.textlieu {
+#lieuparis .textlieu {
   padding-left: 10px;
   color: #353535;
   font-family: robotomed;
 }
-
-.icoloc {
+#lieuparis .icoloc {
   color: #353535;
 }
 
@@ -93,6 +79,16 @@ header {
   flex-direction: column;
   align-items: center;
 }
+#menuhaut .menuhaut_titre {
+  text-align: center;
+  padding: 30px 18px 18px 18px;
+  font-size: x-large;
+}
+#menuhaut .menuhaut_soustitre {
+  text-align: center;
+  padding: 0px 15px 18px 15px;
+  font-size: large;
+}
 
 #boutonexplorer {
   background: linear-gradient(to bottom right, #f075da, #a45cdc);
@@ -101,17 +97,19 @@ header {
   border-radius: 50px;
   margin-bottom: 40px;
 }
-
 #boutonexplorer:hover {
-  box-shadow: 2px 4px 13px 5px #c9c9ca;
+  box-shadow: 2px 4px 13px 5px #cecdcd;
 }
-
-.explorer {
+#boutonexplorer .explorer {
   color: white;
 }
 
 #Fonctionnement {
   padding: 35px 20px 40px 20px;
+}
+
+#etapes {
+  padding: 25px 0px;
 }
 
 .etape {
@@ -126,65 +124,39 @@ header {
   box-shadow: -4px 4px 14px 0px #e6e4e4;
   position: relative;
 }
-
-#etapes {
-  padding: 25px 0px;
-}
-
-.nometape {
-  padding-left: 20px;
-}
-
-.icoetape {
-  padding-left: 10px;
-}
-
 .etape:hover {
   background-color: #f5edff;
   box-shadow: -4px 4px 14px 0px #d1cece;
 }
-
-.icoactive {
-  color: #9356DC;
+.etape::before {
+  position: absolute;
+  background-color: #9356dc;
+  content: "3";
+  border-radius: 20px;
+  width: 19px;
+  text-align: center;
+  left: -11px;
+  color: white;
+  padding: 2px;
+  font-family: "robotomed";
+}
+.etape .nometape {
+  padding-left: 20px;
+}
+.etape .icoetape {
+  padding-left: 10px;
 }
 
 .etape1::before {
-  position: absolute;
   content: "1";
-  background-color: #9356DC;
-  border-radius: 20px;
-  width: 19px;
-  text-align: center;
-  left: -11px;
-  color: white;
-  padding: 2px;
-  font-family: "robotomed";
 }
 
 .etape2::before {
-  position: absolute;
   content: "2";
-  background-color: #9356DC;
-  border-radius: 20px;
-  width: 19px;
-  text-align: center;
-  left: -11px;
-  color: white;
-  padding: 2px;
-  font-family: "robotomed";
 }
 
-.etape3::before {
-  position: absolute;
-  content: "3";
-  background-color: #9356DC;
-  border-radius: 20px;
-  width: 19px;
-  text-align: center;
-  left: -11px;
-  color: white;
-  padding: 2px;
-  font-family: "robotomed";
+.icoactive {
+  color: #9356dc;
 }
 
 i.fas.fa-bars.icoetape {
@@ -200,6 +172,10 @@ i.fas.fa-mobile-alt.icoetape {
   background-color: #f6f6f6;
 }
 
+#lieux {
+  padding: 30px 0px 30px 0px;
+}
+
 .restaurant {
   border-radius: 20px;
   display: flex;
@@ -207,14 +183,7 @@ i.fas.fa-mobile-alt.icoetape {
   margin-bottom: 20px;
   box-shadow: 7px 8px 20px 2px #e1e1e1;
 }
-
-.imgresto {
-  width: 100%;
-  border-radius: 20px 20px 0px 0px;
-  height: max-content;
-}
-
-.restobas {
+.restaurant .restobas {
   background-color: white;
   border-radius: 0px 0px 20px 20px;
   padding: 15px;
@@ -222,62 +191,44 @@ i.fas.fa-mobile-alt.icoetape {
   justify-content: space-between;
   align-items: center;
 }
-
-#lieux {
-  padding: 30px 0px 30px 0px;
+.restaurant .restobas .nomresto {
+  color: black;
+  margin-bottom: 3px;
 }
-
-.divimgresto {
+.restaurant .restobas .lieuresto {
+  color: black;
+}
+.restaurant .divimgresto {
   display: flex;
   max-height: 210px;
   overflow: hidden;
 }
-
-.nomresto {
-  color: black;
-  margin-bottom: 3px;
-}
-
-.lieuresto {
-  color: black;
+.restaurant .divimgresto .imgresto {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  height: max-content;
 }
 
 i.far.fa-heart {
   font-size: x-large;
   color: black;
 }
-
 i.far.fa-heart:hover {
   font-weight: 800;
+  background: linear-gradient(to bottom right, #f075da, #a45cdc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #baspage {
   background-color: #353535;
   padding: 20px;
 }
-
-.logo2 {
+#baspage .logo2 {
   color: white;
   padding-bottom: 20px;
   font-size: larger;
-}
-
-.lienico {
-  color: white;
-}
-
-.lienico1 {
-  color: white;
-  padding-left: 17px;
-}
-
-.lienico2 {
-  color: white;
-  padding-left: 10px;
-}
-
-.icobas {
-  color: white;
 }
 
 .liensico {
@@ -286,12 +237,19 @@ i.far.fa-heart:hover {
   padding-bottom: 10px;
   align-items: center;
 }
-
-i.far.fa-heart:hover {
-  font-weight: 800;
-  background: linear-gradient(to bottom right, #f075da, #a45cdc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.liensico .lienico {
+  color: white;
+}
+.liensico .lienico1 {
+  color: white;
+  padding-left: 17px;
+}
+.liensico .lienico2 {
+  color: white;
+  padding-left: 10px;
+}
+.liensico .icobas {
+  color: white;
 }
 
 i.fas.fa-hands-helping {
