@@ -361,6 +361,23 @@ i.far.fa-heart:hover {
   .desserts {
     width: calc(33% - 30px);
   }
+
+  .divimgresto {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media screen and (min-width: 790px) {
+  .imgresto {
+    position: absolute;
+    top: -18%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .imgresto {
+    top: -50%;
+  }
 }
 
 /*# sourceMappingURL=style_menu.css.map */

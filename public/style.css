@@ -373,6 +373,12 @@ i.fas.fa-hands-helping {
     width: calc(33% - 30px);
     margin: 15px;
   }
+
+  #Fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1300px) {
   .restaurant {
