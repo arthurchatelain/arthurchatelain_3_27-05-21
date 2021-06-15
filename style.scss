@@ -233,10 +233,20 @@ i.fas.fa-mobile-alt.icoetape {
         display: flex;
         max-height: 210px;
         overflow: hidden;
+        position: relative;
         .imgresto {
             width: 100%;
             border-radius:  20px 20px 0px 0px;
             height: max-content;
+        }
+        .nouveau {
+            padding: 10px 20px;
+            background-color: #99e2d0;
+            color: #24836c;
+            font-family: 'robotomed';
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
     }
     &:hover {
