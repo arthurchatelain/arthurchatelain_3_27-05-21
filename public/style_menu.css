@@ -217,12 +217,17 @@ i.far.fa-heart:hover {
 }
 .plat .texteplat {
   margin: 10px;
+  width: calc(100% - 80px);
 }
 
 .plat:hover .active {
   display: flex;
   animation: remplir 0.3s;
   justify-content: center;
+}
+
+.plat:hover .texteplat {
+  width: calc(100% - 140px);
 }
 
 @keyframes remplir {
@@ -236,10 +241,16 @@ i.far.fa-heart:hover {
 .nomplat {
   font-family: robotomed;
   padding-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .description {
   font-family: robotolight;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .commander {
