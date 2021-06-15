@@ -289,7 +289,7 @@ i.far.fa-heart:hover {
 
 .plat:hover .active {
   display: flex;
-  animation: remplir 0.3s;
+  animation: remplir 0.5s;
   justify-content: center;
 }
 
