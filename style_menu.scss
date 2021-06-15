@@ -108,13 +108,6 @@ i.fas.fa-hands-helping {
         }
     }
 }
-i.far.fa-heart:hover {
-    font-weight: 800;
-    background: linear-gradient(to bottom right, #f075da, #a45cdc);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 i.far.fa-heart {
     font-size: x-large;
     &:hover {
@@ -123,10 +116,22 @@ i.far.fa-heart {
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: coeur 1200ms;
+    }
+}
+@keyframes coeur {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 .entrees {
     padding: 15px;
+    animation: opaqueentree 3s;
+    position: relative;
+    top: 0px;
     .titreentrees {
         padding-bottom: 20px;
         &::after {
@@ -141,6 +146,9 @@ i.far.fa-heart {
 }
 .plats {
     padding: 15px;
+    animation: opaqueplat 3s;
+    position: relative;
+    top: 0px;
     .titreplats {
         padding-bottom: 20px;
         &::after {
@@ -155,6 +163,9 @@ i.far.fa-heart {
 }
 .desserts {
     padding: 15px;
+    animation: opaquedessert 3s;
+    position: relative;
+    top: Opx;
     .titredesserts {
         padding-bottom: 20px;
         &::after {
@@ -165,6 +176,63 @@ i.far.fa-heart {
             display: block;
             position: absolute;
         }
+    }
+}
+@keyframes opaqueentree {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+        top: 100px;
+    }
+    50% {
+        opacity: 1;
+        top: 0px;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opaqueplat {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        top: 100px;
+    }
+    75% {
+        opacity: 1;
+        top: 0px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes opaquedessert {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+        top: 100px;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
     }
 }
 .plat {
