@@ -47,7 +47,6 @@
 .baspage {
   background-color: #353535;
   padding: 20px;
-  width: 100%;
 }
 .baspage .logo2 {
   color: white;
@@ -366,6 +365,10 @@ i.far.fa-heart:hover {
     height: 500px;
     overflow: hidden;
     position: relative;
+  }
+
+  .baspage {
+    width: 100%;
   }
 }
 @media screen and (min-width: 790px) {
