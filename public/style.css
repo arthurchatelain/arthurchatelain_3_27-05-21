@@ -37,7 +37,7 @@
   height: 100vh;
   z-index: 1000;
   transform: scaleX(1);
-  animation: disparaitre 3s ease-out;
+  animation: disparaitre 2s ease-out;
   animation-fill-mode: forwards;
 }
 
@@ -256,6 +256,9 @@ i.fas.fa-mobile-alt.icoetape {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   height: max-content;
+}
+.restaurant:hover {
+  transform: scale(1.05);
 }
 
 i.far.fa-heart {

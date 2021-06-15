@@ -187,18 +187,52 @@ i.far.fa-heart:hover {
 .plat {
   background-color: white;
   border-radius: 15px;
-  padding: 10px;
-  padding-right: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10px;
+  box-shadow: 2px 1px 8px 0px #b7b7b7;
+}
+.plat .divprix {
+  display: flex;
 }
 .plat .prix {
   align-self: flex-end;
   font-family: robotomed;
+  margin: 10px;
+  margin-right: 20px;
+}
+.plat .active {
+  background-color: #99e2d0;
+  width: 60px;
+  border-radius: 0px 15px 15px 0px;
+  display: none;
+}
+.plat .active .icocheck {
+  align-self: center;
+  position: relative;
+  bottom: -2px;
+  font-size: larger;
+  color: white;
+}
+.plat .texteplat {
+  margin: 10px;
 }
 
+.plat:hover .active {
+  display: flex;
+  animation: remplir 0.3s;
+  justify-content: center;
+}
+
+@keyframes remplir {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 60px;
+  }
+}
 .nomplat {
   font-family: robotomed;
   padding-bottom: 3px;

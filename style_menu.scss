@@ -23,6 +23,7 @@
     padding: 0px;
     text-decoration: none;
 }
+$couleurb: #99e2d0;
 .shrikhand {
     font-family: shrikhand;
 }
@@ -131,7 +132,7 @@ i.far.fa-heart {
         &::after {
             width: 40px;
             height: 3px;
-            background: #99e2d0;
+            background: $couleurb;
             content: " ";
             display: block;
             position: absolute;
@@ -145,7 +146,7 @@ i.far.fa-heart {
         &::after {
             width: 40px;
             height: 3px;
-            background: #99e2d0;
+            background: $couleurb;
             content: " ";
             display: block;
             position: absolute;
@@ -159,7 +160,7 @@ i.far.fa-heart {
         &::after {
             width: 40px;
             height: 3px;
-            background: #99e2d0;
+            background: $couleurb;
             content: " ";
             display: block;
             position: absolute;
@@ -169,15 +170,49 @@ i.far.fa-heart {
 .plat {
     background-color: white;
     border-radius: 15px;
-    padding: 10px;
-    padding-right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
+    box-shadow: 2px 1px 8px 0px #b7b7b7;
+    .divprix {
+        display: flex;
+    }
     .prix {
         align-self: flex-end;
         font-family: robotomed;
+        margin: 10px;
+        margin-right: 20px;
+        
+    }
+    .active {
+            background-color: $couleurb;
+            width: 60px;
+            border-radius: 0px 15px 15px 0px;
+            display: none;
+            .icocheck {
+                align-self: center;
+                position: relative;
+                bottom: -2px;
+                font-size: larger;
+                color: white;
+            }
+    }
+    .texteplat {
+        margin: 10px;
+    }
+}
+.plat:hover .active {
+    display: flex;
+    animation: remplir 0.3s;
+    justify-content: center;
+}
+@keyframes remplir {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 60px;
     }
 }
 .nomplat {

@@ -37,7 +37,7 @@ $couleura: #9356dc;
     height: 100vh;
     z-index: 1000;
     transform: scaleX(1);
-    animation: disparaitre 3s ease-out; 
+    animation: disparaitre 2s ease-out; 
     animation-fill-mode: forwards;
 }
 .loader {
@@ -234,6 +234,9 @@ i.fas.fa-mobile-alt.icoetape {
             height: max-content;
         }
     }
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 i.far.fa-heart {
     font-size: x-large;
@@ -278,6 +281,8 @@ i.far.fa-heart {
 i.fas.fa-hands-helping {
     color: white;
 }
+
+
 @media screen and (min-width: 500px) {
     .logo {
         width: 200px;
