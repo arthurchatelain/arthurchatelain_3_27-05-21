@@ -267,12 +267,20 @@ i.far.fa-heart:hover {
   font-family: robotomed;
   margin: 10px;
   margin-right: 20px;
+  transition: all 400ms ease-in-out 150ms;
 }
 .plat .active {
   background-color: #99e2d0;
   width: 60px;
   border-radius: 0px 15px 15px 0px;
-  display: none;
+  opacity: 0;
+  width: 0px;
+  transform: scaleX(0.1);
+  transform-origin: right;
+  transition: all 400ms ease-in-out 150ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .plat .active .icocheck {
   align-self: center;
@@ -280,20 +288,28 @@ i.far.fa-heart:hover {
   bottom: -2px;
   font-size: larger;
   color: white;
+  transform: rotate(360deg);
+  transition: all 400ms ease-in-out 150ms;
 }
 .plat .texteplat {
   margin: 10px;
   width: calc(100% - 80px);
+  transition: all 400ms ease-in-out 150ms;
 }
 
 .plat:hover .active {
-  display: flex;
-  animation: remplir 0.5s;
-  justify-content: center;
+  width: 60px;
+  opacity: 1;
+  transform: translateX(-60px);
+  transform: scaleX(1);
 }
 
 .plat:hover .texteplat {
   width: calc(100% - 140px);
+}
+
+.plat:hover .icocheck {
+  transform: rotate(0deg);
 }
 
 @keyframes remplir {

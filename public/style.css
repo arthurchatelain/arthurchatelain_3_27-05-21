@@ -214,11 +214,11 @@ header {
 }
 
 i.fas.fa-bars.icoetape {
-  color: grey;
+  color: #9356dc;
 }
 
 i.fas.fa-mobile-alt.icoetape {
-  color: grey;
+  color: #9356dc;
 }
 
 #restaurants {
@@ -292,7 +292,6 @@ i.far.fa-heart {
 i.far.fa-heart:hover {
   font-weight: 800;
   background: linear-gradient(to bottom right, #f075da, #a45cdc);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: coeur 1200ms;
