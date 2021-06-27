@@ -125,7 +125,6 @@ i.far.fa-heart {
 i.far.fa-heart:hover {
   font-weight: 800;
   background: linear-gradient(to bottom right, #f075da, #a45cdc);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: coeur 1200ms;
@@ -179,7 +178,7 @@ i.far.fa-heart:hover {
   padding: 15px;
   animation: opaquedessert 3s;
   position: relative;
-  top: Opx;
+  top: 0px;
 }
 .desserts .titredesserts {
   padding-bottom: 20px;
@@ -300,7 +299,6 @@ i.far.fa-heart:hover {
 .plat:hover .active {
   width: 60px;
   opacity: 1;
-  transform: translateX(-60px);
   transform: scaleX(1);
 }
 
